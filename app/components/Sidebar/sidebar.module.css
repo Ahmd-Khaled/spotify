@@ -1,0 +1,88 @@
+.sidebar {
+  width: 240px;
+  background-color: #000;
+  color: #FFF;
+  height: 100vh;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+}
+
+.sideList {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sideListItem {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #aaa;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.sideListItem:hover {
+  color: #FFF;
+}
+
+.active {
+  color: #fff;
+}
+
+.sideListItem:nth-last-child(2) {
+  margin-top: 20px;
+}
+
+.sideIcon {
+  width: 24px;
+}
+
+.sideListItemTxt {
+  font-weight: 500;
+}
+
+.sidebarBottom {
+
+}
+
+.sidebarCookies {
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.sideLang {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #FFF;
+  width: fit-content;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.sideLangIcon {
+  width: 18px;
+}
+
+.sideLangTxt {
+  font-size: 14px;
+  font-weight: 400;
+}
+

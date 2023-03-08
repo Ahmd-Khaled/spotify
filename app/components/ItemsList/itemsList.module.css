@@ -1,0 +1,34 @@
+.contWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin-bottom: 32px;
+}
+
+.contTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contLink {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contLink:hover,
+.contShowAll:hover {
+  text-decoration: underline;
+}
+
+.contShowAll {
+  font-size: 14px;
+  font-weight: 500;
+  color: #aaa;
+}
+
+.contList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}

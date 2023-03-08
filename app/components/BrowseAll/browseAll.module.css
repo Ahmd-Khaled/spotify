@@ -1,0 +1,19 @@
+.browse {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #777;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.browseTitle {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+.browseList {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}

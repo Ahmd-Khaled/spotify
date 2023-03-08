@@ -1,0 +1,35 @@
+.category {
+  display: block;
+  width: 192px;
+  height: 192px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  /* background-color: rgb(39, 133, 106); */
+  position: relative;
+  overflow: hidden;
+}
+
+.categoryTitle {
+  padding: 16px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.categoryImg {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotate(25deg) translate(18%,-2%);
+  -webkit-transform: rotate(25deg) translate(18%,-2%);
+  -moz-transform: rotate(25deg) translate(18%,-2%);
+  -ms-transform: rotate(25deg) translate(18%,-2%);
+  -o-transform: rotate(25deg) translate(18%,-2%);
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+}

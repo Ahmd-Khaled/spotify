@@ -1,6 +1,6 @@
-import { Inter, Roboto } from 'next/font/google'
+import { Inter, Roboto, Open_Sans } from 'next/font/google'
 import styles from './page.module.css'
-import { Content, ContentWrapper, Navbar } from './components'
+import { BrowseAll, ContentWrapper, Navbar } from '../components'
 
 const inter = Inter({ subsets: ['latin'] })
 const roboto = Roboto({
@@ -10,13 +10,12 @@ const roboto = Roboto({
   display: 'swap',
 });
 
-
-export default function Home() {
+export default function Search() {
   return (
     <section className={roboto.className}>
-      <Navbar isSearch={false} />
+      <Navbar isSearch={true} />
       <ContentWrapper>
-        <Content />
+        <BrowseAll />
       </ContentWrapper>
     </section>
   )

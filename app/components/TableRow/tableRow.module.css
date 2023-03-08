@@ -1,0 +1,99 @@
+.playlistTableRow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /*justify-content: space-between;
+  */gap: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  height: 56px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.playlistTableRow:hover {
+  background-color: #2C2C2B;
+}
+
+.playlistTableRow tr {
+  text-align: left;
+}
+
+.playlistTableRow a:hover {
+  text-decoration: underline;
+}
+
+.playlistTableRowIconPlay {
+  display: none;
+  cursor: pointer;
+}
+
+.playlistTableRow:hover .playlistTableRowIconPlay {
+  display: block;
+}
+
+.playlistTableRow:hover .playlistTableCellNumber {
+  display: none;
+}
+
+.playlistTableCell1 {
+  width: 16px;
+}
+
+.playlistTableCell2 {
+  width: 40px;
+}
+
+.playlistTableCell3 {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.playlistTableCell3 > :first-child {
+  color: #fff;
+}
+
+.playlistTableCell3 > :last-child {
+  color: hsla(0,0%,100%,.7);
+  font-size: 13px;
+}
+
+.playlistTableCell4 {
+  width: 250px;
+  color: hsla(0,0%,100%,.7);
+  font-size: 14px;
+}
+
+.playlistTableCell5 {
+  width: 180px;
+  color: hsla(0,0%,100%,.7);
+  font-size: 14px;
+}
+
+.playlistTableCell6 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: hsla(0,0%,100%,.7);
+  font-size: 14px;
+}
+
+.playlistTableRow .playlistTableRowIconHeart,
+.playlistTableRow .playlistTableRowIconDots {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.playlistTableRow:hover .playlistTableRowIconHeart,
+.playlistTableRow:hover .playlistTableRowIconDots {
+  opacity: 1;
+}

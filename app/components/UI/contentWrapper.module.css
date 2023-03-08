@@ -1,0 +1,15 @@
+.contentWrapper {
+  background-color: #121212f3;
+  color: #FFF;
+  padding: 20px 34px;
+  /* height: calc(100vh - 72px); */
+}
+
+.bgGradient {
+  background: transparent;
+  color: #FFF;
+  /* padding: 20px 34px; */
+  /* background-color: rgb(64, 64, 56);
+  background: -webkit-linear-gradient(linear,left top,left bottom,from(transparent),to(rgba(0,0,0,.5))),var(--bg-gradient);
+  background: linear-gradient(transparent 0,rgba(0,0,0,.5) 100%),var(--bg-gradient); */
+}

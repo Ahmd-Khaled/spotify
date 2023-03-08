@@ -1,6 +1,6 @@
+import { ContentWrapper, Navbar, Playlist } from '@/app/components';
 import { Inter, Roboto } from 'next/font/google'
 import styles from './page.module.css'
-import { Content, ContentWrapper, Navbar } from './components'
 
 const inter = Inter({ subsets: ['latin'] })
 const roboto = Roboto({
@@ -10,13 +10,12 @@ const roboto = Roboto({
   display: 'swap',
 });
 
-
-export default function Home() {
+export default function PlaylistPage() {
   return (
     <section className={roboto.className}>
-      <Navbar isSearch={false} />
-      <ContentWrapper>
-        <Content />
+      <Navbar isSearch={false} isPlaylist={true} />
+      <ContentWrapper bgGradient={true}>
+        <Playlist />
       </ContentWrapper>
     </section>
   )
