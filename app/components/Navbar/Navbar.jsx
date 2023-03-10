@@ -45,8 +45,8 @@ export default function Navbar({ isSearch, isPlaylist }) {
           <Link className={styles.navLink} href='/download'>Download</Link>
         </div>
         <div className={styles.navSign}>
-          <Link className={`${styles.navLink} ${styles.signup}`} href='/sign-up'>Sign up</Link>
-          <div className={styles.navLogin}>Log in</div>
+          <Link href='/signup' className={`${styles.navLink} ${styles.signup}`}>Sign up</Link>
+          <Link href='/login' className={styles.navLogin}>Log in</Link>
         </div>
       </div>
     </div>

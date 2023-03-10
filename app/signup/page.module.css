@@ -1,0 +1,269 @@
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.signupLogo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  /* border-bottom: 1px solid rgb(217, 218, 220); */
+  padding: 30px;
+}
+
+.signupTxt {
+  font-size: 26px;
+}
+
+.signupMethods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  max-width: 450px;
+}
+
+.signupMethodsFB,
+.signupMethodsGoogle {
+  width: 312px;
+  /* width: 350px; */
+  height: 48px;
+  border: 1px solid #777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 6px 24px;
+}
+
+.signupMethodIcon {
+  width: 26px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.signupMethodsFB {
+  background-color: #405A93;
+  color: rgb(248, 248, 248);
+}
+
+.signupMethodsGoogle {
+  border: 2px solid rgb(83, 83, 83);
+  color: rgb(83, 83, 83);
+}
+
+.signupMethodsGoogle .signupMethodIcon {
+  color: rgb(83, 83, 83);
+}
+
+.loginOR {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.loginOrTxt {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.loginHr {
+  background-color: rgb(217, 218, 220);
+  height: 1px;
+  /* width: 200px; */
+  width: 100%;
+}
+
+/* --------------------------------------------- */
+.signupForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
+  border-bottom: 1px solid rgb(217, 218, 220);
+  padding-bottom: 24px;
+}
+
+.formInputLabel {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.signupFormDBirth {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.signupFormDBirthBox {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.signupFormDBirthDay,
+.signupFormDBirthMonth,
+.signupFormDBirthYear {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.signupFormDBirthDay {
+  width: 20%;
+}
+
+.signupFormDBirthMonth {
+  width: 40%;
+}
+
+.signupFormDBirthYear {
+  width: 30%;
+}
+
+.signupFormDBirthLabel {
+  font-size: 14px;
+}
+
+.signupFormDBirthSelect,
+.signupFormDBirthInput {
+  height: 40px;
+  padding: 8px 4px;
+  border: 1px solid #b2b2b2;
+  outline: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.signupFormGender {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.signupFormGenderList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.signupFormGenderItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.signupFormGenderItem label {
+  font-size: 14px;
+}
+
+.signupFormGenderItem input {
+  margin: 0;
+  border: 1px solid #878787;
+}
+
+.signupFormSendOffers,
+.signupFormShareRegistration {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+}
+
+.signupFormSendOffers input,
+.signupFormShareRegistration input {
+  margin: 0;
+  margin-top: 2px;
+}
+
+.signupFormSendOffers label,
+.signupFormShareRegistration label {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.signupFormTerms {
+  padding-top: 20px;
+}
+
+.signupFormTerms,
+.signupFormPolicy {
+  text-align: center;
+  margin: auto;
+  line-height: 1.4;
+  font-size: 13px;
+  margin-top: -10px;
+}
+
+.signupFormTerms a,
+.signupFormPolicy a {
+  color: rgb(29, 185, 84);
+  text-decoration: underline;
+}
+
+.signupFormSubmitBtn {
+  text-align: center;
+  margin: auto;
+  background-color: #1ed760;
+  border: none;
+  outline: none;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.signupFormSubmitBtn:hover {
+  background-color: #1fdf64;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.signupRedirectToLogin {
+
+}
+
+.signupRedirectToLogin a {
+  color: rgb(29, 185, 84);
+  text-decoration: underline;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.signupRedirectToLogin a:hover {
+  opacity: 0.7;
+}

@@ -9,3 +9,4 @@ export { default as CategoryCard } from './CategoryCard/CategoryCard';
 export { default as PlaySong } from './PlaySong/PlaySong';
 export { default as Playlist } from './Playlist/Playlist';
 export { default as TableRow } from './TableRow/TableRow';
+export { default as FormInput } from './FormInput/FormInput';
