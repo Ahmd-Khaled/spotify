@@ -37,7 +37,7 @@ export default function Navbar({ isSearch, isPlaylist, isActive }) {
             <h3 className={styles.navPlaySongTitle}>Deep Focus</h3>
           </div>
         }
-        {true && 
+        {isActive && 
           <ul className={styles.navCollectionList}>
             <li className={styles.navCollectionItem}>
               <Link href='/collection/playlists' className={isActive ==='playlists' ? styles.navCollectionLinkActive : styles.navCollectionLink}>playlists</Link>
