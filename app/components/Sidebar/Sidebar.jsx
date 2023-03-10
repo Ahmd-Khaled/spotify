@@ -21,15 +21,15 @@ export default function Sidebar() {
             <FontAwesomeIcon icon={faMagnifyingGlass} className={styles.sideIcon} />
             <span className={styles.sideListItemTxt}>Search</span>
           </Link>
-          <Link href='/your-library' className={styles.sideListItem}>
+          <Link href='/collection/playlists' className={styles.sideListItem}>
             <FontAwesomeIcon icon={faLayerGroup} className={styles.sideIcon} />
             <span className={styles.sideListItemTxt}>Your Library</span>
           </Link>
-          <Link href='/create-playlist' className={styles.sideListItem}>
+          <Link href='/playlist/slug' className={styles.sideListItem}>
             <FontAwesomeIcon icon={faSquarePlus} className={styles.sideIcon} />
             <span className={styles.sideListItemTxt}>Create Playlist</span>
           </Link>
-          <Link href='/liked-songs' className={styles.sideListItem}>
+          <Link href='/collection/tracks' className={styles.sideListItem}>
             <FontAwesomeIcon icon={faGratipay} className={styles.sideIcon} />
             <span className={styles.sideListItemTxt}>Liked Songs</span>
           </Link>

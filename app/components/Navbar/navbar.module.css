@@ -118,6 +118,38 @@
 
 
 
+/* -----------------Collections Links------------------ */
+
+.navCollectionList {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.navCollectionItem {
+
+}
+
+.navCollectionLink,
+.navCollectionLinkActive {
+  text-transform: capitalize;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.navCollectionLink:hover,
+.navCollectionLinkActive {
+  background-color: #333;
+}
+
+
+
 /* ---------------------------------------------------- */
 .navRight {
   display: flex;

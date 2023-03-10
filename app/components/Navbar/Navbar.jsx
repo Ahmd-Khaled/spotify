@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { PlaySong } from '..';
 import styles from './navbar.module.css';
 
-export default function Navbar({ isSearch, isPlaylist }) {
+export default function Navbar({ isSearch, isPlaylist, isActive }) {
   const searchHandler = () => {
 
   };
@@ -36,6 +36,22 @@ export default function Navbar({ isSearch, isPlaylist }) {
             <PlaySong opacity={1} width={50} />
             <h3 className={styles.navPlaySongTitle}>Deep Focus</h3>
           </div>
+        }
+        {true && 
+          <ul className={styles.navCollectionList}>
+            <li className={styles.navCollectionItem}>
+              <Link href='/collection/playlists' className={isActive ==='playlists' ? styles.navCollectionLinkActive : styles.navCollectionLink}>playlists</Link>
+            </li>
+            <li className={styles.navCollectionItem}>
+              <Link href='/collection/podcasts' className={isActive === 'podcasts' ? styles.navCollectionLinkActive : styles.navCollectionLink}>podcasts</Link>
+            </li>
+            <li className={styles.navCollectionItem}>
+              <Link href='/collection/artists' className={isActive === 'artists' ? styles.navCollectionLinkActive : styles.navCollectionLink}>artists</Link>
+            </li>
+            <li className={styles.navCollectionItem}>
+              <Link href='/collection/albums' className={isActive === 'albums' ? styles.navCollectionLinkActive : styles.navCollectionLink}>albums</Link>
+            </li>
+          </ul>
         }
       </div>
       <div className={styles.navRight}>

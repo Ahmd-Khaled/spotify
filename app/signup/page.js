@@ -1,21 +1,14 @@
 import Image from 'next/image';
 import styles from './page.module.css';
-import { Roboto } from 'next/font/google';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faApple, faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icons';
+import {  faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { FormInput } from '../components';
 
-const roboto = Roboto({
-  weight: ['300', '400', '500', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-  display: 'swap',
-});
 
 export default function Signup() {
   return (
-    <section className={roboto.className}>
+    <section>
       <div className={styles.signup}>
         <Link href='/' className={styles.signupLogo}>
           <Image className={styles.signupLogoImg} width={200} height={50} src='/imgs/Spotify-Black-Logo.wine.svg' alt='' />
