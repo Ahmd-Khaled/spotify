@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --bg-gradient: url('/imgs/bg-gradient.svg')
 }

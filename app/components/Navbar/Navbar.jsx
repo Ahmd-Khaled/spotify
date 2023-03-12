@@ -5,11 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { PlaySong } from '..';
 import styles from './navbar.module.css';
+// --------------------------
+import { useDispatch, useSelector } from 'react-redux';
 
 export default function Navbar({ isSearch, isPlaylist, isActive }) {
-  const searchHandler = () => {
+  const dispatch = useDispatch();
+  const count = useSelector((state) => state.counter.value)
 
-  };
+  const searchHandler = () => {};
 
   return (
     <div className={styles.navbar}>

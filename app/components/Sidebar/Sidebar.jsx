@@ -1,9 +1,11 @@
+"use client";
 import { faGratipay } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe, faHouse, faLayerGroup, faMagnifyingGlass, faSquarePlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './sidebar.module.css';
+
 
 export default function Sidebar() {
   return (

@@ -1,6 +1,7 @@
 import { Navbar, Sidebar } from './components';
 import { Inter, Roboto, Open_Sans } from 'next/font/google'
 import './globals.css';
+import { Providers } from './GlobalRedux/provider';
 
 const inter = Inter({ subsets: ['latin'] })
 const roboto = Roboto({
@@ -23,7 +24,9 @@ export default function RootLayout({ children }) {
           <div className='home'>
             <Sidebar />
             <div className='hRight'>
-              {children}
+              <Providers>
+                {children}
+              </Providers>
             </div>
           </div>
         </main>

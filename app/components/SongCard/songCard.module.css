@@ -15,6 +15,7 @@
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   cursor: pointer;
+  z-index: 2;
 }
 
 .sCard:hover {
@@ -29,19 +30,33 @@
   position: relative;
 }
 
-.sCardImg {
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+.sCardPlayPauseActive {
+  display: flex;
+  background-color: rgb(25 22 36 / 0.7);
 }
 
-.sCardPlay {
+.sCardPlayPauseHidden {
+  display: none;
+}
+
+/* .sCardPlayPause {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(25 22 36 / 0.5);
+  display: none;
+} */
+
+
+.sCardPlayPause {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  z-index: 10;
+  z-index: 5;
   background-color: #1ed760;
   width: 45px;
   height: 45px;
@@ -54,21 +69,28 @@
   align-items: center;
   justify-content: center;
   opacity: 0;
+  cursor: pointer;
 }
 
-.sCardPlay:hover {
+.sCard:hover  .sCardPlayPause {
+  display: flex;
+}
+
+.sCardImg {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.sCard:hover .sCardPlayPause {
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
-  cursor: auto;
-}
-
-.sCardPlayIcon {
-  width: 16px;
-  color: #000;
-  margin-left: 2px;
+  opacity: 1;
 }
 
 .sCard:hover .sCardPlayContainer {

@@ -11,3 +11,5 @@ export { default as Playlist } from './Playlist/Playlist';
 export { default as TableRow } from './TableRow/TableRow';
 export { default as FormInput } from './FormInput/FormInput';
 export { default as CollectionContent } from './CollectionContent/CollectionContent';
+export { default as PlayPause } from './PlayPause/PlayPause';
+export { default as MusicPlayer } from './MusicPlayer';
