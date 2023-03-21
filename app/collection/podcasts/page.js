@@ -12,6 +12,7 @@ export default function Podcasts() {
           title="Follow your first podcast" 
           txt="Follow podcasts you like by tapping the follow button."
           btn="Find podcast"
+          link="/playlist/podcasts"
         />
       </ContentWrapper>
     </section>

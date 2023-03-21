@@ -12,6 +12,7 @@ export default function Tracs() {
           title="Songs you like will appear here" 
           txt="Save songs by tapping the heart icon."
           btn="Find songs"
+          link="/playlist/tracks"
         />
       </ContentWrapper>
     </section>
