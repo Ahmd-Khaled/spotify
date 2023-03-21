@@ -27,7 +27,11 @@ export default function Sidebar() {
             <FontAwesomeIcon icon={faLayerGroup} className={styles.sideIcon} />
             <span className={styles.sideListItemTxt}>Your Library</span>
           </Link>
-          <Link href='/playlist/slug' className={styles.sideListItem}>
+          {/* <Link href='/playlist/slug' className={styles.sideListItem}>
+            <FontAwesomeIcon icon={faSquarePlus} className={styles.sideIcon} />
+            <span className={styles.sideListItemTxt}>Create Playlist</span>
+          </Link> */}
+          <Link href='/playlist/create' className={styles.sideListItem}>
             <FontAwesomeIcon icon={faSquarePlus} className={styles.sideIcon} />
             <span className={styles.sideListItemTxt}>Create Playlist</span>
           </Link>

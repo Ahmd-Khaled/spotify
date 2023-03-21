@@ -1,0 +1,70 @@
+/* ----------Search---------- */
+
+.navSearch,
+.searchForEdit {
+  position: relative;
+  height: 40px;
+  width: 366px;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.navSearchInner {
+  display: flex;
+  align-items: center;
+}
+
+.navSearchIcon {
+  width: 24px;
+  color: #222;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navSearchInput {
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  color: #222;
+  background-color: transparent;
+  padding-right: 30px;
+}
+
+.navSearchInput::placeholder {
+  font-size: 14px;
+}
+
+.navSearchClose {
+  width: 20px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  color: #222;
+  cursor: pointer;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.searchForEdit {
+  background-color: hsla(0,0%,100%,.1);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.searchForEdit .navSearchIcon,
+.searchForEdit .navSearchInput,
+.searchForEdit .navSearchClose {
+  color: #ddd;
+}

@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import styles from './collectionContent.module.css'
 
-export default function CollectionContent({ icon, title, txt, btn }) {
+export default function CollectionContent({ icon, title, txt, btn, link }) {
   return (
     <section>
       <div className={styles.collCont}>
@@ -16,7 +16,7 @@ export default function CollectionContent({ icon, title, txt, btn }) {
           <span>{btn}</span>
         </div>
         <div className={styles.collContBtn}>
-          <Link href='/'>{btn}</Link>
+          <Link href={link}>{btn}</Link>
         </div>
       </div>
     </section>

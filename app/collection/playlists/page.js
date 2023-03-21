@@ -12,6 +12,7 @@ export default function Playlists() {
           title="Create your first playlist" 
           txt="It's easy, we'll help you."
           btn="Create playlist"
+          link="/playlist/create"
         />
       </ContentWrapper>
     </section>

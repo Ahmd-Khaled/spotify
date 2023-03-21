@@ -3,17 +3,12 @@
 import { faChevronLeft, faChevronRight, faMagnifyingGlass, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
-import { PlaySong } from '..';
+import { PlaySong, SearchForm } from '..';
 import styles from './navbar.module.css';
 // --------------------------
 import { useDispatch, useSelector } from 'react-redux';
 
 export default function Navbar({ isSearch, isPlaylist, isActive }) {
-  const dispatch = useDispatch();
-  const count = useSelector((state) => state.counter.value)
-
-  const searchHandler = () => {};
-
   return (
     <div className={styles.navbar}>
       <div className={styles.navLeftWrapper}>
@@ -26,13 +21,7 @@ export default function Navbar({ isSearch, isPlaylist, isActive }) {
           </div>
         </div>
         {isSearch && 
-          <div className={styles.navSearch}>
-            <div className={styles.navSearchInner}>
-              <FontAwesomeIcon className={styles.navSearchIcon} icon={faMagnifyingGlass} />
-              <input onChange={searchHandler} className={styles.navSearchInput} type='text' placeholder='What do you want to listen to?' />
-            </div>
-            <FontAwesomeIcon className={styles.navSearchClose} icon={faXmark} />
-          </div>
+          <SearchForm />
         }
         {isPlaylist &&
           <div className={styles.navPlaySong}>

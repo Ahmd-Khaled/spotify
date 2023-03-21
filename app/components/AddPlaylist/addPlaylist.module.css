@@ -1,0 +1,173 @@
+.addPlaylist {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-height: 384px;
+  width: 524px;
+  background-color: #282828;
+  color: #fff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -webkit-box-shadow: 0 4px 4px rgba(0,0,0,.3);
+  box-shadow: 0 4px 4px rgba(0,0,0,.3);
+  padding: 24px;
+}
+
+.addPlaylistHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addPlaylistHeadTitle {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.addPlaylistHeadIcon {
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.addPlaylistHeadIcon:hover {
+  opacity: 0.7;
+}
+
+.addPlaylistError,
+.addPlaylistNoError {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #e22134;
+  width: 100%;
+  padding: 4px 8px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  font-size: 16px;
+}
+
+.addPlaylistNote {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.addPlaylistNoError {
+  background-color: #2e77d0;
+}
+
+.addPlaylistBody {
+  display: flex;
+  gap: 20px;
+}
+
+.addPlaylistBodyLeft {
+  flex: 2;
+  background-color: hsla(0,0%,100%,.1);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.addPlaylistBodyRight {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.addPlaylistInputBox,
+.addPlaylistInputBoxEmpty {
+  display: flex;
+  flex-direction: column;
+  background-color: hsla(0,0%,100%,.1);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding: 10px 6px 6px;
+  position: relative;
+}
+
+.addPlaylistInputBox {
+  border: 1px solid #535353;
+}
+
+.addPlaylistInputBoxLabel {
+  font-size: 12px;
+  letter-spacing: 0.75px;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #282828;
+  padding-right: 2px;
+  margin: 0;
+  height: 12px;
+  opacity: 0;
+}
+
+.addPlaylistInputBox:focus .addPlaylistInputBoxLabel,
+.addPlaylistInputBoxEmpty:focus .addPlaylistInputBoxLabel {
+  opacity: 1;
+}
+
+.addPlaylistInputBoxInput,
+.addPlaylistInputBoxTextarea {
+  background-color: transparent;
+  border: 0px;
+  outline: 0px;
+}
+
+.addPlaylistInputBoxInput:focus,
+.addPlaylistInputBoxTextarea:focus,
+.addPlaylistInputBoxInput:active,
+.addPlaylistInputBoxTextarea:active {
+  background-color: transparent;
+  border: 0px;
+  outline: 0px;
+}
+
+.addPlaylistInputBoxEmpty  {
+  border-bottom: 2px solid #e22134;
+}
+
+.addPlaylistFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.addPlaylistBtn {
+  background-color: #fff;
+  color: #222;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 22px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  opacity: 1;
+}
+
+.addPlaylistBtn:hover {
+  opacity: 0.7;
+}
+
+.addPlaylistFooterTxt {
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 0.75px;
+  line-height: 1.4;
+}

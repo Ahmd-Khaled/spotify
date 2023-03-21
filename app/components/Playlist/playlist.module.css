@@ -1,96 +1,9 @@
 .playlist {
   display: flex;
   flex-direction: column;
-
 }
 
-.playlitsTop {
-  display: flex;
-  /* gap: 28px; */
-  position: relative;
-  padding: 20px 34px;
-  background-color: #121212cc;
-  background-color: #393932;
-}
-
-.playlitsTopBg {
-  /* background-color: rgb(64, 64, 56); */
-  /* background: -webkit-linear-gradient(linear,left top,left bottom,from(transparent),to(rgba(0,0,0,.5))),var(--bg-gradient);
-  background: linear-gradient(transparent 0,rgba(0,0,0,.5) 100%),var(--bg-gradient);
-  display: block;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%; */
-}
-
-.playlistTopLeft {
-  display: flex;
-  flex-direction: column;
-  margin-right: 28px;
-}
-
-.playlistTopImg {
-  box-shadow: 0 4px 60px rgb(0 0 0 / 50%);
-}
-
-.playlistTopRight {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.playlistTopSmall {
-  font-size: 14px;
-}
-
-.playlistTopTitle {
-  font-size: 96px;
-  margin-top: 8px;
-  margin-bottom: 12px;
-}
-
-.playlistTopTxt {
-  color: hsla(0,0%,100%,.7);
-  font-size: 14px;
-}
-
-.playlistStatistics {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  font-size: 14px;
-  color: #fff;
-}
-
-.playlistSpotify {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.playlistSpotifyImg {
-
-}
-
-.playlistSpotifyLink:hover {
-  text-decoration: underline;
-}
-
-.playlistStatsLikes {
-
-}
-
-.playlistStatsSongs {
-  
-}
-
-.playlistStatsDuration {
-  color: hsla(0,0%,100%,.7);
-}
-
+/* ---------- */
 .playlistBottom {
   padding: 20px 34px;
   background-color: #121212;
